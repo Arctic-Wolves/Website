@@ -1,0 +1,43 @@
+{
+  "name": "artic-wolves-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Artic-Wolves/Website.git",
+  "author": "Chronocide",
+  "license": "GPL-3.0",
+  "scripts": {
+    "lint": "eslint src --ext .js --ext .jsx",
+    "start:client": "webpack -w --mode development",
+    "start:server": "nodemon --config .nodemon.json",
+    "build:client": "webpack --mode production"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "discord.js": "^12.5.1",
+    "emotion": "^11.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.2.0",
+    "leaf-db": "^3.4.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-react": "^7.12.7",
+    "@emotion/babel-plugin": "^11.0.0",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "fs-webpack-plugin": "^2.4.1",
+    "html-webpack-plugin": "^4.5.0",
+    "nodemon": "^2.0.6",
+    "webpack": "^5.8.0",
+    "webpack-cli": "^4.2.0"
+  }
+}
